@@ -1,6 +1,9 @@
 import React from 'react';
 
+
 import { Sprite } from './lib';
+
+// import spiteImg form './idle.png';
 
 import './App.css';
 
@@ -10,7 +13,7 @@ function App() {
         react-sprite-animation
         <br />
         <br />
-        <Sprite />
+        <Sprite  spriteImg={require('./idle.png')} frames={10}/>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.container {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  vertical-align: middle;
+  overflow: hidden;
+  height: 100px;
+}
+
+.sprite {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: calc(var(--frames) * 100%);
+  animation: sprtieAnim 1s infinite steps(calc(var(--frames) - 1));
+}
+
+@keyframes sprtieAnim {
+  to {
+    background-position: 100% 0;
+  }
+}
