@@ -39,4 +39,6 @@ This are the props of the component.
 
 - spriteImg **{string}** - path to sprite
 - frames **{number}** - manually sets current frame
+- className **{string}** - to add class to sprite container
+
 
